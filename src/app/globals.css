@@ -1,0 +1,137 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.Home{
+  display: grid;
+  grid-template-areas: 
+  "sidebar home home"
+  "sidebar home home"
+  "sidebar home home"
+  ;
+  height: 100vh;
+  width: 100vh;
+  grid-template-columns: 21vh 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  
+}
+.Sidebar img{
+  margin-bottom: 50px;
+}
+.Sidebar{
+  grid-area: sidebar;
+  display: block;
+  background-color: black;
+}
+.Sidebar a{
+  color: white;
+  margin-inline: 30%;
+  font-size: x-large;
+}
+.Sidebar a:hover{
+  background-color: white;
+  color: black;
+}
+.idea-form{
+  display: flex;
+}
+.idea-form *{
+  margin: 10px 10px;
+  
+}
+.idea-form textarea {
+  width: 20vw;
+  height: 70vh;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.idea-form input {
+  border:none;
+  border-bottom: 1px solid black;
+}
+.idea-form *:focus{
+  box-shadow: none;
+  outline: none;
+  border: 2px solid black;
+}
+
+.idea-content{
+  grid-area: home;
+  margin: 10px 10px 10px 10px;
+  display: block;
+}
+
+.login-page{
+  display: grid;
+  grid-template-areas: 
+  "header header header "
+  "side form side2"
+  "footer footer footer";
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows:  0.5fr 1fr 0.5fr;
+  grid-template-columns:  1fr 1fr 1fr;
+  background-color: black;
+}
+.login-form{
+  grid-area: form;
+  display: block;
+  background-color: rgba(254, 254, 254, 250);
+}
+.login-form img {
+  margin-top: 20px;
+  margin-inline: 30%;
+}
+.login-form button{
+  margin-inline: 40%;
+  width: 20%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.login-form a{
+  margin-inline: 45%;
+}
+.login-form input{
+  margin-top: 10px;
+  margin-inline: 30%;
+  width: 40%;
+  border: none;
+  border-bottom: 5px solid black;
+}
+.login-form input:focus{
+  border:none;
+  outline: none;
+  box-shadow: none;
+  
+}
+button{
+  text-decoration: none;
+  border:none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+button:hover{
+  transform: scale(1.05);
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  background-color: black;
+  color: white;
+}
+#log{
+  color:red;
+  margin-left: 100px;
+}
+#pages{
+  display:flex;
+}
+.hidden{
+  display: none;
+}
+.comment{
+  margin-top: 100px;
+}
